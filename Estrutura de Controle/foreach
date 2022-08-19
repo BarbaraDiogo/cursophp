@@ -1,0 +1,12 @@
+<?php
+
+$meses = array(
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+);
+
+foreach ($meses as $key => $value){ //1°) array, 2°) cada o foreach cria uma variavel para esse item
+    echo "Indice: " . $key . "<br>";
+    echo "O mês é: " . $value . "<br>";
+}
+
+?>
