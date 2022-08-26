@@ -28,4 +28,19 @@ echo "<br>";
 echo $a;
 //Então, mudando o valor por referencia ele muda tanto dentro qnt fora da função
 
+
+$data = array(
+    'nome' => 'João',
+    'idade' => 20
+);
+foreach ($pessoa as $value){
+    echo $value.'<br>';
+}
+
+foreach ($pessoa as &$value){ // usando a passsagem por valor o resultado da variavel muda dentro e fora do foreach
+    if(gettype($value) === 'integer') $value += 10; // se o tipo da variavel $value for int é p somar 10 nela
+    echo $value.'<br>';
+}
+print_r($pessoa); //printa o array
+
 ?>
